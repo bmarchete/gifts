@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página inicial</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <header class="row clearfix box-title">
+                <div class="col-md-12 column">
+
+                    Presentes.meu
+
+                </div>
+            </header>
+            <nav class="row clearfix box">
+
+                <div class="col-md-12 column">
+
+                    <ul class="nav nav-pills nav-style">
+
+                        <li class="active">
+                            <a href="index.php">Inicio</a>
+                        </li>
+                        <li><a href="about.html">Listas</a>
+                        </li>
+                        <li><a href="produtos.php">Produtos</a>
+                        </li>
+                        <li><a href="contact.html">Contato</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </nav>
+
+
+            <div class="row clearfix box">
+                <hr>
+                <h2 class="intro-text text-center"><strong>Meu Perfil</strong>
+                </h2>
+                <hr>
+                <section class="col-md-6 column ">
+                    <h4 class="intro-text text-center">Imagem de perfil</h4>
+                    <img class="img-responsive img-border-left" src="bootstrap/img/usuario/padrao.jpg" alt="">
+                    <hr />
+                    <form class="form-basic" method="post" enctype="multipart/form-data">
+                        <p><input class="form-control" type="file" name="arquivo"/></p>
+                        <p><button name="enviarFoto" class="btn btn-lg btn-info btn-block" type="submit">Enviar</button></p>
+
+                    </form>
+
+                </section>
+
+                <section class="col-md-6 column ">
+                    <h4 class="intro-text text-center">Dados de perfil</h4>
+                    
+                        <p>Nome: João Rubens</p>
+                        <p>Email: bmarchete@gmail.com</p>
+                        <p>Link: addedfkas</p>
+                        <p>Data de criação: 12/12/2012</p>
+                    
+                    <br />
+
+                    <div class="bg-warning lista">
+                        <h3>Minha Lista</h3>
+
+                        <p>Nome: Lista de aniversário</p>
+                        <form method="post" style="width: 150px;">
+                            <button name="excluirLista" class="btn btn-danger" type="submit"><span class="glyphicon glyphicon-remove"> Excluir</span></button>
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+
+            <section class="row clearfix box">
+                <hr>
+                <h2 class="intro-text text-center"><strong>Serviços para sua lista</strong>
+                </h2>
+                <hr>
+
+                <div class="col-md-12 column">
+
+                    <div class="col-md-6 column" style="background-color: #fff;">
+                        <h3 class="intro-text text-center">Itens da minha lista</h3>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Descricão</th>
+                                    <th>Excluir</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jogo</td>
+                                    <td>
+                                        <form method="post">
+                                            <input type="hidden" name="codProduto" value="1">
+                                            <button name="excluirItem" class="btn btn-danger" type="submit"><span class="glyphicon glyphicon-remove"></span> Excuir</button>
+                                        </form></td>
+
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Jogo</td>
+                                    <td>
+                                        <form method="post">
+                                            <input type="hidden" name="codProduto" value="1">
+                                            <button name="excluirItem" class="btn btn-danger" type="submit"><span class="glyphicon glyphicon-remove"></span> Excuir</button>
+                                        </form></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="col-md-6 column">
+
+                        <h3 class="intro-text text-center">Indicar para um amigo</h3>
+                        <form class="form-basic" role="form" method="post">
+
+                            <p><input type="text" name="nome" class="form-control" placeholder="Nome" required></p>
+                            <p><input type="email" name="email" class="form-control" placeholder="Email" required></p>
+                            <p><button class="btn btn-lg btn-info btn-block" type="submit">Indicar</button></p>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

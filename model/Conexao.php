@@ -8,7 +8,7 @@ class Conexao{
         if (!isset(self::$instance)) {
             self::$instance = new PDO('mysql:host=tunnel.pagodabox.com:3306;dbname=gifts', 'shaquana', '6wenvYEI');
             self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            
+            self::$instance->exec("SET CHARACTER SET utf8");
         } return self::$instance;
     }
    
